@@ -18,7 +18,7 @@
             android:layout_marginBottom="276dp" app:layout_constraintBottom_toTopOf="@+id/button"/>
     <ImageView
             android:layout_width="250dp"
-            android:layout_height="150dp" app:srcCompat="@mipmap/ic_launcher"
+            android:layout_height="150dp" app:srcCompat="@drawable/select"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/imageView" android:onClick="select"/>

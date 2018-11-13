@@ -32,11 +32,18 @@ class Main2Activity : AppCompatActivity() {
             val backgroundColorSpan =  BitmapFactory.decodeResource(applicationContext.resources,R.drawable.select)
             imageView.setImageBitmap(background)
             button.visibility = View.VISIBLE
-            editText.text = ""
+            editText.setText("")
         } else {
 
             val name = intent.getStringExtra("name")
-            editText.text = name
+            editText.setText(name)
+
+            val chosen = Globals.Chosen
+            val bitmap = chosen.returnimage()
+
+            imageView.setImageBitmap(bitmap)
+
+            button.visibility = View.INVISIBLE
         }
     }
 
