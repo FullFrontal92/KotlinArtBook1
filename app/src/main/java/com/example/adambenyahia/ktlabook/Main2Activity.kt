@@ -26,10 +26,10 @@ class Main2Activity : AppCompatActivity() {
 
         val intent = intent
 
-        val info = intent.getStringExtra("name")
+        val info = intent.getStringExtra("info")
 
         if (info.equals("new")){
-            val backgroundColorSpan =  BitmapFactory.decodeResource(applicationContext.resources,R.drawable.select)
+            val background =  BitmapFactory.decodeResource(applicationContext.resources,R.drawable.select)
             imageView.setImageBitmap(background)
             button.visibility = View.VISIBLE
             editText.setText("")
