@@ -6,7 +6,7 @@ class Globals {
 
     companion object Chosen {
         var chosenImage: Bitmap? = null
-        fun  returnimage():Bitmap{
+        fun  returnImage():Bitmap{
             return chosenImage!!
         }
     }

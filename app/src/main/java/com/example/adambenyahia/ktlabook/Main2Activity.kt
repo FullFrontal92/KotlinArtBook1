@@ -11,7 +11,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
-import com.example.adambenyahia.ktlabook.R.attr.background
 import kotlinx.android.synthetic.main.activity_main2.*
 import java.io.ByteArrayOutputStream
 import java.lang.Exception
@@ -39,7 +38,7 @@ class Main2Activity : AppCompatActivity() {
             editText.setText(name)
 
             val chosen = Globals.Chosen
-            val bitmap = chosen.returnimage()
+            val bitmap = chosen.returnImage()
 
             imageView.setImageBitmap(bitmap)
 
